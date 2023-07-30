@@ -7,8 +7,9 @@
  */
 
 get_header();
-?>
+echo get_template_part('./inc/template-parts/hero');
 
+?>
 
 
 

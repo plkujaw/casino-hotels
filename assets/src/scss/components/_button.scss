@@ -1,0 +1,17 @@
+.btn {
+  align-items: center;
+  background: $clr-pink;
+  border-radius: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 9px 23px;
+  position: relative;
+  &::after {
+    background-image: url('../../img/arrow.svg');
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+  }
+}

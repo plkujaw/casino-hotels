@@ -94,23 +94,9 @@ require_once get_template_directory() . '/inc/functions-includes/wordpress-clean
 /**
  * Load Custom Posts file
  */
-// require_once get_template_directory() . '/inc/functions-includes/custom-posts.php';
+require_once get_template_directory() . '/inc/functions-includes/custom-posts.php';
 
 /**
  * Load Custom Taxonomies file
  */
 // require_once get_template_directory() . '/inc/functions-includes/custom-taxonomies.php';
-
-/**
- * Load ACF Blocks Registration file
- */
-require get_template_directory() . '/inc/template-parts/blocks/register-blocks.php';
-
-
-register_block_style(
-  'core/paragraph',
-  array(
-    'name'  => 'no-padding',
-    'label' => 'No Padding',
-  )
-);
