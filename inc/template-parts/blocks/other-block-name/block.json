@@ -1,0 +1,42 @@
+{
+  "name": "other-block-name",
+  "title": "Other Block Name",
+  "description": "Other Block Name",
+  "category": "theme",
+  "style": "file:./other-block-name.min.css",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "block.php"
+  },
+  "supports": {
+    "mode": false,
+    "align": true,
+    "anchor": true,
+    "alignContent": false,
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true
+    },
+    "typography": {
+      "lineHeight": true,
+      "fontSize": true
+    },
+    "alignText": true,
+    "spacing": {
+      "margin": ["top", "bottom"],
+      "padding": true
+    }
+  },
+  "attributes": {
+    "backgroundColor": {
+      "type": "string",
+      "default": "purple"
+    }
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

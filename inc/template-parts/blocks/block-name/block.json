@@ -1,0 +1,43 @@
+{
+  "name": "block-name",
+  "title": "Block Name",
+  "description": "Block Name",
+  "category": "theme",
+  "style": "file:./block-name.min.css",
+  "icon": "admin-comments",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "block.php"
+  },
+  "supports": {
+    "mode": true,
+    "align": false,
+    "alignContent": false,
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true
+    },
+    "alignText": false,
+    "spacing": {
+      "margin": ["top", "bottom"],
+      "padding": true
+    },
+    "typography": {
+      "lineHeight": false,
+      "fontSize": true
+    }
+  },
+  "attributes": {
+    "backgroundColor": {
+      "type": "string",
+      "default": "primary"
+    }
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

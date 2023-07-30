@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.1/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": false,
+    "border": {
+      "color": false,
+      "radius": false,
+      "style": false,
+      "width": false
+    },
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false,
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false
+    },
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1440px"
+    },
+    "spacing": {
+      "blockGap": null,
+      "margin": false,
+      "padding": false,
+      "units": []
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontStyle": false,
+      "fontWeight": false,
+      "letterSpacing": false,
+      "lineHeight": false,
+      "textDecoration": false,
+      "textTransform": false,
+      "dropCap": false,
+      "fontSizes": [],
+      "fontFamilies": []
+    },
+    "useRootPaddingAwareAlignments": true,
+    "blocks": {
+      "acf/block-name": {
+        "typography": {
+          "fontSizes": [
+            { "size": "0.6rem", "slug": "small", "name": "Small" },
+            { "size": "1rem", "slug": "normal", "name": "Normal" },
+            { "size": "1.5rem", "slug": "large", "name": "Large" }
+          ]
+        },
+        "color": {
+          "text": true,
+          "background": true,
+          "palette": [
+            { "slug": "primary", "color": "#9edda0", "name": "Primary" },
+            { "slug": "secondary", "color": "#349beb", "name": "Secondary" }
+          ]
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontSizes": [
+            { "size": "0.6rem", "slug": "small", "name": "Small" },
+            { "size": "1rem", "slug": "normal", "name": "Normal" },
+            { "size": "1.5rem", "slug": "large", "name": "Large" }
+          ]
+        },
+        "color": {
+          "text": true,
+          "background": true,
+          "palette": [
+            { "slug": "primary", "color": "#9edda0", "name": "Primary" },
+            { "slug": "secondary", "color": "#349beb", "name": "Secondary" }
+          ]
+        }
+      }
+    }
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0"
+      }
+    }
+  }
+}

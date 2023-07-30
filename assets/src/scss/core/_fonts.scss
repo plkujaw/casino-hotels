@@ -1,0 +1,54 @@
+$fontsDir: '../../fonts/';
+
+@font-face {
+  font-display: swap;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  src: url('#{$fontsDir}Jost-Light.woff2') format('woff2'),
+    url('#{$fontsDir}Jost-Light.woff') format('woff'),
+    url('#{$fontsDir}Jost-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  src: url('#{$fontsDir}Poppins-Bold.woff2') format('woff2'),
+    url('#{$fontsDir}Poppins-Bold.woff') format('woff'),
+    url('#{$fontsDir}Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('#{$fontsDir}Poppins-Medium.woff2') format('woff2'),
+    url('#{$fontsDir}Poppins-Medium.woff') format('woff'),
+    url('#{$fontsDir}Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('#{$fontsDir}Poppins-SemiBold.woff2') format('woff2'),
+    url('#{$fontsDir}Poppins-SemiBold.woff') format('woff'),
+    url('#{$fontsDir}Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fontsDir}Poppins-Regular.woff2') format('woff2'),
+    url('#{$fontsDir}Poppins-Regular.woff') format('woff'),
+    url('#{$fontsDir}Poppins-Regular.ttf') format('truetype');
+}
+
+$brand-font-1: 'Poppins', sans-serif;
+$brand-font-2: 'Jost', sans-serif;
