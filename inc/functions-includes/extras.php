@@ -40,3 +40,11 @@ add_action('acf/input/admin_footer', 'klf_acf_input_admin_footer');
 
 // Disable Notification Emails for Plugin Updates
 add_filter('auto_plugin_update_send_email', '__return_false');
+
+function strict_type_acf_float_field($value, $post_id, $field): float
+{
+  $value = (float) $value ;
+  return $value;
+}
+
+add_filter('acf/format_value/type=range', 'strict_type_acf_float_field', 10, 3);

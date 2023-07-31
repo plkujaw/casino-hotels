@@ -19,7 +19,7 @@ $cta = get_field('about_cta'); ?>
       <article class="about__text">
         <?php echo $text ?>
       </article>
-      <a href="" class="about__cta btn">Read More</a>
+      <a href="javascript:void(0)" class="about__cta btn">Read More</a>
     </div>
     <div class="about__image mobile-hide">
       <?php echo wp_get_attachment_image($image, 'entry') ?>

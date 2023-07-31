@@ -12,6 +12,16 @@ $fontsDir: '../../fonts/';
 
 @font-face {
   font-display: swap;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: bold;
+  src: url('#{$fontsDir}Jost-Bold.woff2') format('woff2'),
+    url('#{$fontsDir}Jost-Bold.woff') format('woff'),
+    url('#{$fontsDir}Jost-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: bold;

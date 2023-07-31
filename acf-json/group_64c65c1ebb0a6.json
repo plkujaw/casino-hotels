@@ -94,7 +94,7 @@
             "label": "Hotel Link",
             "name": "casino_link",
             "aria-label": "",
-            "type": "link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -103,14 +103,15 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_64c6649ab1b54",
             "label": "Review Link",
             "name": "casino_review_link",
             "aria-label": "",
-            "type": "link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -119,7 +120,8 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -140,5 +142,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690789255
+    "modified": 1690808250
 }

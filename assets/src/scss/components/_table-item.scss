@@ -1,0 +1,202 @@
+.table-item {
+  align-items: center;
+  background: $clr-white;
+  border-radius: 5px;
+  box-shadow: 2px 10px 54px rgba(84, 121, 247, 0.14);
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  justify-content: space-between;
+  padding: 21px 24px 14px;
+  position: relative;
+
+  &[data-rank='1'] {
+    margin-top: 70px;
+    &::before {
+      align-items: center;
+      background-color: $clr-blue;
+      border-radius: 20px 20px 0px 0px;
+      color: $clr-white;
+      content: 'Top Rated Hotel';
+      display: flex;
+      font-size: 0.875rem;
+      font-weight: 500;
+      height: 31px;
+      justify-content: center;
+      left: 50%;
+      margin: 0 auto;
+      position: absolute;
+      top: -31px;
+      transform: translateX(-50%);
+      width: 217px;
+    }
+  }
+
+  &__rank {
+    align-items: center;
+    background-color: $clr-pink;
+    border-radius: 5px;
+    color: $clr-white;
+    display: none;
+    font-family: $brand-font-2;
+    font-size: 1.6875rem;
+    font-weight: 700;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 32px;
+  }
+
+  &__rating {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    .star-rating {
+      margin-top: 6px;
+      position: relative;
+      text-align: center;
+      .cover {
+        background: $clr-white;
+        height: 100%;
+        mix-blend-mode: color;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      span {
+        color: $clr-gray;
+        font-family: $brand-font-2;
+        padding-top: 8px;
+      }
+    }
+
+    .score-rating {
+      height: 75px;
+      width: 75px;
+      aspect-ratio: 1/1;
+
+      svg {
+        display: inline-flex;
+        vertical-align: bottom;
+        height: 75px;
+        width: 75px;
+      }
+      circle {
+        fill: none;
+        stroke-dasharray: 0;
+        stroke-width: 7px;
+      }
+
+      .meter {
+        fill: none;
+        stroke-width: 7px;
+        transform: rotate(-90deg) scaleX(-1);
+        transform-origin: center center;
+      }
+
+      text {
+        fill: $clr-black;
+        font-size: 1.5625rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__logo {
+    // margin-left: 32px;
+    order: 1;
+  }
+
+  &__address {
+    flex: 1 0 100%;
+    margin: 21px 0 12px;
+    order: 3;
+    position: relative;
+    text-align: center;
+    span {
+      color: $clr-gray;
+      display: block;
+      padding-top: 10px;
+    }
+    address {
+      font-size: 0.875rem;
+      padding: 10px 0;
+    }
+    &::before,
+    &::after {
+      background-color: $clr-gray;
+      content: '';
+      height: 1px;
+      left: 10%;
+      position: absolute;
+      width: 80%;
+    }
+  }
+
+  &__links {
+    flex: 1 0 100%;
+    order: 4;
+    text-align: center;
+    .btn {
+      background-color: $clr-green;
+      color: $clr-white;
+      margin: 0 auto 13px;
+    }
+
+    a:not(.btn) {
+      color: $clr-gray;
+      text-decoration: underline;
+    }
+  }
+
+  @include for-size($tablet-landscape-up) {
+    gap: 24px;
+    justify-content: space-between;
+    width: 100%;
+    // padding: 21px 24px 14px;
+
+    &__rank {
+      display: flex;
+    }
+
+    // &__rating,
+    // &__address,
+    // &__links {
+      // flex: 1 1 30%;
+      // width: 20%;
+      // justify-content: space-evenly;
+    // }
+
+    &__rating {
+      flex-direction: row-reverse;
+      gap: 74px;
+      order: 3;
+    }
+
+    &__logo {
+      margin-left: 32px;
+      width: 20%;
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &__address {
+      flex: unset;
+      order: 2;
+      &::before,
+      &::after {
+        all: unset;
+      }
+    }
+
+    &__links {
+      flex: unset;
+      order: 4;
+    }
+  }
+}
