@@ -2,6 +2,7 @@ body {
   font-family: $brand-font-1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.21;
   text-rendering: optimizeLegibility; // aestheticallyloyal.com/public/optimize-legibility/
   -webkit-text-size-adjust: 100%; // Prevents iOS orientation font resize bug
 }
@@ -9,4 +10,8 @@ body {
 a,
 p {
   font-size: 1em;
+}
+
+p {
+  line-height: 1.75;
 }
