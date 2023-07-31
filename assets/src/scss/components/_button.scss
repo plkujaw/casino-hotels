@@ -4,16 +4,17 @@
   border-radius: 100px;
   display: flex;
   flex-wrap: nowrap;
+  font-weight: 500;
   justify-content: center;
   padding: 9px 9px 9px 23px;
   position: relative;
-  font-weight: 500;
+  width: fit-content;
   &::after {
     background-image: url('../../img/arrow.svg');
     content: '';
     display: inline-block;
     height: 30px;
-    width: 30px;
     margin-left: 18px;
+    width: 30px;
   }
 }

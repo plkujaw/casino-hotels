@@ -1,0 +1,45 @@
+.about {
+  padding: 48px 0 52px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 36px;
+  }
+  &__heading {
+    h3 {
+      color: $clr-pink;
+      padding-bottom: 36px;
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  @include for-size($tablet-landscape-up) {
+    .container {
+      align-items: center;
+      display: flex;
+      gap: 120px;
+    }
+    &__inner {
+      width: 60%;
+    }
+
+    &__heading {
+      max-width: 520px;
+    }
+
+    &__text {
+      max-width: 680px;
+    }
+
+    &__image.mobile-hide {
+      width: 40%;
+    }
+  }
+}

@@ -96,7 +96,6 @@ html {
 }
 
 body {
-
 }
 
 a {
@@ -110,10 +109,9 @@ li {
 
 $site-width: 1440px; // based on the design
 
-
 .container {
   margin: 0 auto;
   max-width: $site-width;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px 0 30px;
 }

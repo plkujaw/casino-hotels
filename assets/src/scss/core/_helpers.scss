@@ -1,0 +1,12 @@
+.mobile-show {
+  @include for-size($tablet-landscape-up) {
+    display: none !important;
+  }
+}
+
+.mobile-hide {
+  display: none !important;
+  @include for-size($tablet-landscape-up) {
+    display: block !important;
+  }
+}
