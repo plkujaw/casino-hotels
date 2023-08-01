@@ -90,23 +90,6 @@
             "append": ""
         },
         {
-            "key": "field_64c65d03fec7e",
-            "label": "Hotel Link",
-            "name": "casino_link",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
             "key": "field_64c6649ab1b54",
             "label": "Review Link",
             "name": "casino_review_link",
@@ -142,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690808250
+    "modified": 1690894799
 }

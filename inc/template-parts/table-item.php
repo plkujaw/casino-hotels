@@ -5,7 +5,6 @@ $logo = get_field('casino_logo');
 $address = get_field('casino_address');
 $star_rating = get_field('casino_star_rating');
 $score = get_field('casino_score');
-$hotel_link = get_field('casino_link');
 $review_link = get_field('casino_review_link');
 
 $rating_value = 100 - $star_rating * 20;
@@ -62,7 +61,7 @@ $score_value = $score * 10;
   </div>
 
   <div class="table-item__links">
-    <a href="<?php echo esc_url($hotel_link) ?>" class="btn">Visit Hotel</a>
+    <a href="<?php the_permalink() ?>" class="btn">Visit Hotel</a>
     <a href="<?php echo esc_url($review_link) ?>">Read Review</a>
   </div>
 </div>
