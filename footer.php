@@ -20,6 +20,7 @@
         'container' => 'nav',
         'container_class' => 'footer__nav',
       )); ?>
+      <hr>
       <div class="footer__bottom">
         <div class="copyright"><span>© <?php echo date('Y') ?> Sports Canada. All rights reserved.</span></div>
         <div class="logos">
