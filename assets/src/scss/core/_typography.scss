@@ -8,6 +8,10 @@ body {
   -webkit-text-size-adjust: 100%; // Prevents iOS orientation font resize bug
 }
 
+a {
+  transition: color $default-transition;
+}
+
 a,
 p {
   font-size: 1em;

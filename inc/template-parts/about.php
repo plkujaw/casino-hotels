@@ -9,19 +9,19 @@ $cta = get_field('about_cta'); ?>
 <section id="about" class="about">
   <div class="container">
     <div class="about__inner">
-      <div class="about__heading heading">
+      <div class="about__heading heading lazy-load js-lazy-load">
         <h3><?php echo $title ?></h3>
         <h2><?php echo $subtitle ?></h2>
       </div>
-      <div class="about__image mobile-show">
+      <div class="about__image mobile-show lazy-load js-lazy-load">
         <?php echo wp_get_attachment_image($image, 'entry') ?>
       </div>
-      <article class="about__text">
+      <article class="about__text lazy-load js-lazy-load">
         <?php echo $text ?>
       </article>
-      <a href="javascript:void(0)" class="about__cta btn">Read More</a>
+      <a href="javascript:void(0)" class="about__cta btn lazy-load js-lazy-load">Read More</a>
     </div>
-    <div class="about__image mobile-hide">
+    <div class="about__image mobile-hide lazy-load js-lazy-load">
       <?php echo wp_get_attachment_image($image, 'entry') ?>
     </div>
   </div>

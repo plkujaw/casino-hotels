@@ -26,6 +26,11 @@
     &::after {
       transform: rotate(90deg);
     }
+    &:hover {
+      &::after {
+        @include bounce-y;
+      }
+    }
   }
 
   &__background {

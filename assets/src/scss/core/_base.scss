@@ -115,3 +115,16 @@ $site-width: 1440px; // based on the design
   width: 100%;
   padding: 0 10px 0 30px;
 }
+
+$default-transition: 0.3s ease-in-out;
+
+.lazy-load {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all $default-transition;
+  &.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

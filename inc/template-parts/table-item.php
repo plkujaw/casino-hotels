@@ -25,7 +25,7 @@ if ($star_rating <= 5 && $star_rating >= 4.5) {
 $score_value = $score * 10;
 ?>
 
-<div class="table-item" data-rank="<?php echo $index; ?>">
+<div class="table-item lazy-load js-lazy-load" data-rank="<?php echo $index; ?>">
   <div class="table-item__rank">
     <span><?php echo $index; ?></span>
   </div>

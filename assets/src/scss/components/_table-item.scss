@@ -54,10 +54,12 @@
     display: flex;
     flex-direction: column;
     order: 2;
+
     .star-rating {
       margin-top: 6px;
       position: relative;
       text-align: center;
+
       .cover {
         background: $clr-white;
         height: 100%;
@@ -67,6 +69,7 @@
         right: 0;
         top: 0;
       }
+
       span {
         color: $clr-gray;
         font-family: $brand-font-2;
@@ -75,16 +78,17 @@
     }
 
     .score-rating {
+      aspect-ratio: 1/1;
       height: 75px;
       width: 75px;
-      aspect-ratio: 1/1;
 
       svg {
         display: inline-flex;
-        vertical-align: bottom;
         height: 75px;
+        vertical-align: bottom;
         width: 75px;
       }
+
       circle {
         fill: none;
         stroke-dasharray: 0;
@@ -107,7 +111,6 @@
   }
 
   &__logo {
-    // margin-left: 32px;
     order: 1;
   }
 
@@ -117,15 +120,18 @@
     order: 3;
     position: relative;
     text-align: center;
+
     span {
       color: $clr-gray;
       display: block;
       padding-top: 10px;
     }
+
     address {
       font-size: 0.875rem;
       padding: 10px 0;
     }
+
     &::before,
     &::after {
       background-color: $clr-gray;
@@ -141,6 +147,7 @@
     flex: 1 0 100%;
     order: 4;
     text-align: center;
+
     .btn {
       background-color: $clr-green;
       color: $clr-white;
@@ -150,6 +157,9 @@
     a:not(.btn) {
       color: $clr-gray;
       text-decoration: underline;
+      &:hover {
+        color: $clr-black;
+      }
     }
   }
 
@@ -157,19 +167,10 @@
     gap: 24px;
     justify-content: space-between;
     width: 100%;
-    // padding: 21px 24px 14px;
 
     &__rank {
       display: flex;
     }
-
-    // &__rating,
-    // &__address,
-    // &__links {
-      // flex: 1 1 30%;
-      // width: 20%;
-      // justify-content: space-evenly;
-    // }
 
     &__rating {
       flex-direction: row-reverse;

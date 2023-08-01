@@ -15,6 +15,14 @@
     display: inline-block;
     height: 30px;
     margin-left: 18px;
+    transition: transform $default-transition;
     width: 30px;
+  }
+  &:not(.arrow-down) {
+    &:hover {
+      &::after {
+        @include bounce-x;
+      }
+    }
   }
 }

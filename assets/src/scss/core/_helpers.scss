@@ -10,3 +10,39 @@
     display: block !important;
   }
 }
+
+@keyframes bounceX {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@mixin bounce-x {
+  animation: bounceX 0.7s 1;
+}
+
+@keyframes bounceY {
+  0% {
+    transform: translateY(0) rotate(90deg);
+  }
+
+  50% {
+    transform: translateY(5px) rotate(90deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+@mixin bounce-y {
+  animation: bounceY 0.7s 1;
+}

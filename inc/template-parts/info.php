@@ -9,12 +9,12 @@ $content = get_field('info_content');
 <!-- Info Section -->
 <section class="info">
   <div class="container">
-    <div class="info__heading heading">
+    <div class="info__heading heading lazy-load js-lazy-load">
       <h3><?php echo $title ?></h3>
       <h2><?php echo $subtitle ?></h2>
     </div>
     <div class="info__inner">
-      <div class="info__image">
+      <div class="info__image lazy-load js-lazy-load">
         <?php echo wp_get_attachment_image($image, 'entry') ?>
       </div>
       <article class="info__content">
@@ -26,7 +26,7 @@ $content = get_field('info_content');
           $subtitle = $item['subtitle'];
           empty($indicator) ? $indicator = $index : null;
         ?>
-          <div class="content-item">
+          <div class="content-item lazy-load js-lazy-load">
             <div class="content-item__indicator">
               <span class="indicator"><?php echo $indicator ?></span>
             </div>
@@ -39,7 +39,6 @@ $content = get_field('info_content');
           $index++;
         }
         ?>
-
       </article>
     </div>
   </div>

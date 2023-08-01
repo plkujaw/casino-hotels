@@ -6,7 +6,7 @@ $title = get_field('table_title')
 <!-- Table Section -->
 <section class="table">
   <div class="container">
-    <div class="table__heading">
+    <div class="table__heading lazy-load js-lazy-load">
       <h2>
         <?php echo $title; ?>
       </h2>
