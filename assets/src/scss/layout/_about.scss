@@ -6,17 +6,12 @@
     gap: 36px;
     margin-bottom: 36px;
   }
-  &__heading {
-    h3 {
-      color: $clr-pink;
-      padding-bottom: 36px;
-    }
-  }
+
   &__image {
     img {
-      width: 100%;
-      max-width: 600px;
       margin: 0 auto;
+      max-width: 500px;
+      width: 100%;
     }
   }
 

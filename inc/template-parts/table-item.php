@@ -1,7 +1,5 @@
 <?php
 
-use function PHPSTORM_META\type;
-
 $index = $args['index'];
 $logo = get_field('casino_logo');
 $address = get_field('casino_address');

@@ -1,13 +1,10 @@
 <?php
 $title = get_field('table_title')
-
 ?>
-
 
 
 <!-- Table Section -->
 <section class="table">
-
   <div class="container">
     <div class="table__heading">
       <h2>
@@ -34,6 +31,7 @@ $title = get_field('table_title')
           echo get_template_part('./inc/template-parts/table-item', null, array('index' => $index));
           $index++;
         }
+        wp_reset_postdata();
       }
       ?>
     </div>

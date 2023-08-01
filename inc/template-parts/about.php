@@ -9,7 +9,7 @@ $cta = get_field('about_cta'); ?>
 <section id="about" class="about">
   <div class="container">
     <div class="about__inner">
-      <div class="about__heading">
+      <div class="about__heading heading">
         <h3><?php echo $title ?></h3>
         <h2><?php echo $subtitle ?></h2>
       </div>
